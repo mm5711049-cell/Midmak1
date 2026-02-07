@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مؤسسة مدماك الجنوب العقارية</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            luxuryBlack: '#050505',
+            premiumGold: '#c9a24d'
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            mont: ['Montserrat', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-luxuryBlack text-white font-cairo">
+
+<header class="glass fixed top-0 w-full z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <img src="logo.png" class="h-12" />
+    <nav class="space-x-6 space-x-reverse">
+      <a href="index.html" class="nav-link">الرئيسية</a>
+      <a href="about.html" class="nav-link">من نحن</a>
+      <a href="construction_pro.html" class="nav-link">المقاولات</a>
+    </nav>
+  </div>
+</header>
+
+<section class="min-h-screen flex items-center justify-center text-center px-6">
+  <div class="glass p-12 rounded-3xl max-w-3xl hover-3d">
+    <img src="logo.png" class="mx-auto h-28 mb-6" />
+    <h1 class="text-5xl font-bold text-premiumGold mb-6">استثمار عقاري بمعايير ملكية</h1>
+    <p class="text-gray-300 mb-8">نقود التطوير العقاري في الجنوب وفق أعلى المعايير الهندسية المعتمدة في الكود السعودي.</p>
+    <a href="#projects" class="btn-gold">مشاريعنا</a>
+  </div>
+</section>
+
+<section id="projects" class="py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="section-title">مشاريعنا</h2>
+    <div class="grid md:grid-cols-3 gap-10 mt-14">
+      <div class="glass card hover-3d">فلل سكنية راقية</div>
+      <div class="glass card hover-3d">مجمعات استثمارية</div>
+      <div class="glass card hover-3d">تطوير أراضٍ</div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact" class="glass py-10 text-center text-gray-400">
+  © 2026 مؤسسة مدماك الجنوب العقارية
+</footer>
+
+</body>
+</html>
